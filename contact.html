@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shamim Hadad | UX/UI Designer & Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- mouse tracker  -->
+    <div class="tracker"></div>
+    <div class="track-pointer"></div>
+    <!-- end of mouse tracker  -->
+
+    <!-- header  -->
+    <header>
+        <nav data-aos="fade-down" data-aos-duration="2000">
+            <a href="projects.html">projects</a>
+            <a href="contact.html">contact</a>
+            <!-- logo name  -->
+            <a href="index.html" class="logo">
+                <h1>
+                    <div>Shamim</div>
+                    <div>Hadad</div>
+                </h1>
+            </a>
+            <!-- icons  -->
+            <div class="icons">
+                <a href="https://www.behance.net/shamim-hdn"><i class="ri-behance-fill"></i></a>
+                <a href="https://github.com/Shamim-hdn"><i class="ri-github-fill"></i></a>
+                <a href="https://www.linkedin.com/in/shamim-hadad/"><i class="ri-linkedin-fill"></i></a>
+            </div>
+        </nav>
+    </header>
+    <!-- end of header  -->
+
+    <!-- main section for contact us  -->
+    <main class="contactUs">
+        <h1 data-aos="fade-down" data-aos-duration="2000">Let's Connect <br></h1>
+
+        <div class="address-form">
+
+            <div class="address">
+                <div data-aos="fade-right" data-aos-duration="2000">
+                    <h4>Address</h4>
+                    <p>59 Hampton Court Road
+                        Birmingham, UK.
+                    </p>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="2000">
+                    <h4>Email</h4>
+                    <p><a href="mailto:shamim_hadadnezhad@yahoo.com">shamim_hadadnezhad@yahoo.com</a></p>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="2000">
+                    <h4>Phone</h4>
+                    <p><a href="tel:+447398182429">(+44)7398182429</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h4 data-aos="fade-left" data-aos-duration="2000">TELL US ABOUT YOUR PROJECT AND GOALS.</h4>
+                <form action="/submit_form.php" method="post" id="mint_form" onsubmit="submit(event)">
+
+                    <div>
+                        <label for="name">What's your name?</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div>
+                        <label for="name">What's the name of your organisation?</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+
+                    <div>
+                        <label for="email">What's your email?</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="message">Tell us about your project goals.</label>
+                        <textarea id="message" name="message" cols="30" rows="3" required></textarea>
+                    </div>
+
+                    <div>
+                        <label for="message">Do you have a timeline in mind?</label>
+                        <input type="text" name="message" id="message" required>
+                    </div>
+
+                    <button type="submit">
+                        <a href="mailto:shamim_hadadnezhad@yahoo.com"> Submit <i class="ri-arrow-right-up-line"></i></a>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- end of section for contact us  -->
+
+    <!-- scrolltotop button -->
+    <div class="scroll" onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="ri-arrow-up-fill"></i>
+    </div>
+    <!--  end of scrolltotop button -->
+
+
+    <!-- footer section  -->
+    <footer data-aos="fade-up" data-aos-duration="2000">
+        <p>Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+            <span>Shamim Hadad</span> All Rights Reserved.
+        </p>
+        <div class="socials">
+            <a href="https://www.behance.net/shamim-hdn"><i class="ri-behance-fill"></i></a>
+                <a href="https://github.com/Shamim-hdn"><i class="ri-github-fill"></i></a>
+                <a href="https://www.linkedin.com/in/shamim-hadad/"><i class="ri-linkedin-fill"></i></a>
+        </div>
+    </footer>
+    <!-- end of footer section  -->
+
+
+    <!-- JAvascript  -->
+    <!-- AOS js  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.querySelector("#mint_form").onsubmit = submit;
+
+        async function submit(event) {
+
+        }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
