@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500,@600,@700&display=swap");
 
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -56,7 +56,7 @@ header {
 }
 
 header nav {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -80,8 +80,9 @@ header nav a:hover {
 
 nav>a {
   color: #333;
-  text-transform: uppercase;
-  font-size: 16px;
+  text-transform: unset;
+  font-size: 18px;
+  margin: 0 8px;
   font-weight: 600;
 }
 
@@ -100,13 +101,13 @@ nav .logo h1>div:first-child {
 nav .logo h1>div:last-child {
   font-weight: 400;
   font-size: 25px;
-  font-family: serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav .icons i {
   color: #333;
-  font-size: 22px;
-  margin: 0 4px;
+  font-size: 25px;
+  margin: 0 8px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -137,7 +138,7 @@ main.info .name {
 
 main.info .name h1 {
   color: rgb(115, 72, 14);
-  font-family: serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 4rem;
 }
@@ -162,7 +163,7 @@ aside.edu div h3 {
   color: #333;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
@@ -218,7 +219,7 @@ aside.data div h1 {
   text-align: right;
   font-size: 3rem;
   color: rgb(115, 72, 14);
-  font-family: serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* mouse tracker styling  */
@@ -403,7 +404,7 @@ main.education {
 main.education>h1 {
   text-align: center;
   color: rgb(115, 72, 14);
-  font-family: serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 4rem;
   padding-bottom: 6rem;
@@ -426,6 +427,7 @@ main.education .educa-exper>.education {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 2rem;
+  padding: 2rem;
 }
 
 main.education .educa-exper>.education h4 {
@@ -898,9 +900,10 @@ footer .socials a {
 
 footer .socials i {
   color: #333;
-  margin: 0 6px;
+  margin: 0 8px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-size: 25px;
 }
 
 footer .socials i:hover {
@@ -918,7 +921,7 @@ main.projects {
 main.projects>h1 {
   padding: 0 0 3rem;
   color: #222;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 main.projects>.projects {
@@ -1551,7 +1554,7 @@ main.contactUs .address-form .form-section form button:hover {
 
   /* ===== media query for project.html page ===== */
   main.projects>h1 {
-    font-size: 2.3rem;
+    font-size: 1.5rem;
   }
 
   main.projects>.projects {
