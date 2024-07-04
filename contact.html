@@ -22,14 +22,12 @@
     <!-- header  -->
     <header>
         <nav data-aos="fade-down" data-aos-duration="2000">
-            <a href="projects.html">projects</a>
-            <a href="https://shamim-hdn.github.io/UX-UIportfolio/">portfolio</a>
+            <a href="projects.html">Web Development Projecs</a>
+            <a href="https://shamimhadad.com/">UX/UI Design portfolio</a>
             <!-- logo name  -->
             <a href="index.html" class="logo">
                 <h1>
-                    <div>Shamim</div>
-                    <div>Hadad</div>
-                </h1>
+                    <div>Home</div>                </h1>
             </a>
             <!-- icons  -->
             <div class="icons">
@@ -43,22 +41,22 @@
 
     <!-- main section for contact us  -->
     <main class="contactUs">
-        <h1 data-aos="fade-down" data-aos-duration="2000">Let's Connect <br></h1>
+        <h1 data-aos="fade-down" data-aos-duration="1000">Let's Connect<br></h1>
 
         <div class="address-form">
 
             <div class="address">
-                <div data-aos="fade-right" data-aos-duration="2000">
+                <div data-aos="fade-right" data-aos-duration="1000">
                     <h4>Address</h4>
                     <p>59 Hampton Court Road
                         Birmingham, UK.
                     </p>
                 </div>
-                <div data-aos="fade-right" data-aos-duration="2000">
+                <div data-aos="fade-right" data-aos-duration="1000">
                     <h4>Email</h4>
                     <p><a href="mailto:shamim_hadadnezhad@yahoo.com">shamim_hadadnezhad@yahoo.com</a></p>
                 </div>
-                <div data-aos="fade-right" data-aos-duration="2000">
+                <div data-aos="fade-right" data-aos-duration="1000">
                     <h4>Phone</h4>
                     <p><a href="tel:+447398182429">(+44)7398182429</a>
                     </p>
@@ -66,38 +64,27 @@
             </div>
 
             <div class="form-section">
-                <h4 data-aos="fade-left" data-aos-duration="2000">TELL US ABOUT YOUR PROJECT AND GOALS.</h4>
-                <form action="/submit_form.php" method="post" id="mint_form" onsubmit="submit(event)">
-
-                    <div>
-                        <label for="name">What's your name?</label>
-                        <input type="text" id="name" name="name" required>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 mx-auto">
+                            <form action="contact.php" method="post">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
                     </div>
-
-                    <div>
-                        <label for="name">What's the name of your organisation?</label>
-                        <input type="text" name="name" id="name" required>
-                    </div>
-
-                    <div>
-                        <label for="email">What's your email?</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div>
-                        <label for="message">Tell us about your project goals.</label>
-                        <textarea id="message" name="message" cols="30" rows="3" required></textarea>
-                    </div>
-
-                    <div>
-                        <label for="message">Do you have a timeline in mind?</label>
-                        <input type="text" name="message" id="message" required>
-                    </div>
-
-                    <button type="submit">
-                        <a href="mailto:shamim_hadadnezhad@yahoo.com"> Submit <i class="ri-arrow-right-up-line"></i></a>
-                    </button>
-                </form>
+                </div>
             </div>
         </div>
     </main>
@@ -111,7 +98,7 @@
 
 
     <!-- footer section  -->
-    <footer data-aos="fade-up" data-aos-duration="2000">
+    <footer data-aos="fade-up" data-aos-duration="1000">
         <p>Copyright &copy;
             <script>
                 document.write(new Date().getFullYear());
