@@ -116,6 +116,10 @@ nav .icons i:hover {
   color: rgb(115, 72, 14);
 }
 
+.nav-btn {
+font-size:xx-large;
+color: rgb(115, 72, 14);
+}
 /* Main section  */
 main.info {
   width: 80%;
@@ -297,7 +301,7 @@ main.strength .packages {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
+  -ms-grid-columns: (1fr, 6);
   grid-template-columns: repeat(6, 1fr);
 }
 
@@ -395,7 +399,7 @@ main.strength .package:hover .img-cont img {
 
 /* main section for eduaction and experience  */
 main.education {
-  width: 95%;
+  width: 100%;
   margin: 20px auto;
   border-bottom: 2px solid #999;
   padding: 3rem 0 8rem;
@@ -407,7 +411,7 @@ main.education>h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 4rem;
-  padding-bottom: 6rem;
+  padding-bottom: 5rem;
 }
 
 main.education .educa-exper {
@@ -427,7 +431,7 @@ main.education .educa-exper>.education {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 main.education .educa-exper>.education h4 {
@@ -670,35 +674,7 @@ main.testimony .instagram-img {
   gap: 1.5rem;
 }
 
-main.testimony .instagram-img>*:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
 
-main.testimony .instagram-img>*:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-
-main.testimony .instagram-img>*:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-}
-
-main.testimony .instagram-img>*:nth-child(4) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 7;
-}
-
-main.testimony .instagram-img>*:nth-child(5) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 9;
-}
-
-main.testimony .instagram-img>*:nth-child(6) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 11;
-}
 
 main.testimony .instagram-img a {
   text-decoration: none;
@@ -1276,7 +1252,7 @@ main.contactUs .address-form .form-section form button:hover {
   }
 
   main.testimony .instagram-img {
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: (1fr, 3);
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -1447,7 +1423,7 @@ main.contactUs .address-form .form-section form button:hover {
   }
 
   main.strength .packages {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: (1fr, 1);
     grid-template-columns: repeat(1, 1fr);
     row-gap: 2rem;
   }
@@ -1483,11 +1459,11 @@ main.contactUs .address-form .form-section form button:hover {
 
   main.education .educa-exper>.education h1,
   main.education .educa-exper>.education p {
-    text-align: justify;
+    text-align:left;
   }
 
   main.education .educa-exper>.education .details {
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 
   main.testimony {
